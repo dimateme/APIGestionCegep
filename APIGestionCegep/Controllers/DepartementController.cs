@@ -65,7 +65,7 @@ namespace APIGestionCegep.Controllers
         /// <param name="nomDepartementDTO"></param>
         [Route("Departement/AjouterDepartement")]
         [HttpPost]
-        public void AjouterCegep([FromQuery] string nomCgep, [FromBody] DepartementDTO nomDepartementDTO)
+        public void AjouterDepartement([FromQuery] string nomCgep, [FromBody] DepartementDTO nomDepartementDTO)
         {
             if (nomDepartementDTO != null && nomCgep!=null)
             {
